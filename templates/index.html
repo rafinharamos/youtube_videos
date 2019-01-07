@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="col-sm-12 well">
+	<h1 class="text-center"> WELCOME </h1>
+</div>
+<div class="col-sm-12">
+	<div class="col-sm-3">
+		<div class="stat-panel">
+			<div class="stat-row">
+				<!-- Info background, without padding, horizontally centered text, super large text -->
+				<div class="stat-cell bg-info no-padding text-center text-slg">
+					Themes
+				</div>
+			</div> <!-- /.stat-row -->
+			<div class="stat-row">
+				<!-- Bordered, without top border, horizontally centered text, large text -->
+				<div class="stat-cell bordered no-border-t text-center text-lg">
+					<div class="pull-left">
+						<a href="{% url 'get_popular_themes' %}">List</a>
+					</div>
+					<div class="pull-right">
+						<a href="#">Create</a>
+					</div>
+				</div>
+			</div> <!-- /.stat-row -->
+		</div> <!-- /.stat-panel -->
+	</div>
+</div>
+{% endblock %}

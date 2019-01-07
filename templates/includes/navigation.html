@@ -1,0 +1,16 @@
+<ul class="navigation">
+	<li>
+		<a href="{% url 'index' %}"><i class="menu-icon fa fa-dashboard"></i><span class="mm-text">Index</span></a>
+	</li>
+	<li class="mm-dropdown">
+		<a href="#"><i class="menu-icon fa fa-th"></i><span class="mm-text">Themes</span></a>
+		<ul>
+			<li>
+				<a tabindex="-1" href="{% url 'get_popular_themes' %}"><span class="mm-text">List</span></a>
+			</li>
+		<!-- 	<li>
+				<a tabindex="-1" href="layouts-main-menu.html"><span class="mm-text">Create</span></a>
+			</li> -->
+		</ul>
+	</li>
+</ul> <!-- / .navigation -->

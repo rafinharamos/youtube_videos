@@ -1,0 +1,7 @@
+.navigation {
+	margin-top: 5px;	
+}
+
+.required_form::after {
+	content: "*"
+}
